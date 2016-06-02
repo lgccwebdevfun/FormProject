@@ -11,9 +11,58 @@
       <h1>Contact Us</h1>
     </header>
     <main>
-        <!-- form goes here -->
-      <footer>
-      </footer>
+        <form method="post" action="http://www.johan-martin.com/opencode/form.php">
+          <div class="top">
+            <label for="first">First Name</label>
+            <input type="text" name="first" id="first" placeholder="first name" required>
+              <label for="last">Last Name</label>
+
+              <input type="text" name="last" id="last" placeholder="last name">
+
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email Address">
+              <label for="message">Message</label>
+              <textarea cols="50" rows="10" name="message" id="message">Message goes here</textarea>
+
+              <div>
+                <label for="date">Date</label>
+                <input type="date" name="date">
+                <label for="range">Range</label>
+                <input type="range" name="points" min="0" max="10" step="2">
+                <label for="color">Color</label>
+                <input type="color" name="colors">
+                <label for="number">Number</label>
+                <input type="number" name="mynumber" min="0" max="50" step="10" value="25">
+            </div>
+          </div>
+
+          <div class="gender">
+            <h2>Gender</h2>
+            <label>
+              <input type="radio" name="gender" value="male" checked>
+              Male</label>
+            <label><input type="radio" name="gender" value="female">Female</label>
+          </div>
+
+          <div class="category">
+            <label for="category">Category</label>
+            <select name="category" id="category">
+              <option value="">Choose One...</option>
+              <option value="teacher">Teacher</option>
+              <option value="student">Student</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <footer>
+            <h2>Terms and agreements</h2>
+            <label><input type="checkbox" name="updates" checked>I'd like to receive notices when this site updates</label>
+            <label><input type="checkbox" name="notices">I'd like to receive notices pertaining to related websites and their services</label>
+            <div class="submit">
+              <input type="submit" value="Submit" name="submit">
+              <input type="reset" value="Reset" name="reset">
+            </div>
+          </footer>
+      </form>
     </main>
 
   </body>
